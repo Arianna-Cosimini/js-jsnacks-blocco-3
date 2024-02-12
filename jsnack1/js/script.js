@@ -4,10 +4,18 @@
 const buttonElement = document.querySelector("button").addEventListener("click", function(){
 
     let userChoice = document.querySelector("#userChoice").value;
-    console.log(userChoice)
+    console.log(userChoice);
 
 
 
+    function getReverseWord (userChoice){
+        const reverseWords = [];
+        for (let i = userChoice.lenght -1; i >= 0; i-- ){
+            reverseWords.push(userChoice[i]);
+        }
+
+        return reverseWords.join('');
+    }
 
 
 
