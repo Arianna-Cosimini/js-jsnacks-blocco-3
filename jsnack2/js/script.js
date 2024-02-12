@@ -20,8 +20,10 @@ function betweenArray (nameList, numberList){
         numberPlusNameList.push(numberList[i])
         console.log(numberPlusNameList)
     }
+
+    return numberPlusNameList;
 }
 
-betweenArray (nameList,numberList);
-// console.log(betweenArray)
-// console.log(nameList.length[i] + 1)
+
+let result = betweenArray(nameList,numberList);
+console.log(result)
