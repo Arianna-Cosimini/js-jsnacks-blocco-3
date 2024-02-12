@@ -8,34 +8,42 @@
 // Nel nostro caso, se la chiamassimo così tagliaArray(arrayNumeri, 2, 4) ci restituirebbe un array così composto:
 // [2, 3, 4]
 
-const numbers = ["0" ," 1"," 2"," 3", "4"," 5"," 6", "7", "8", "9", "10"]
+// Array di numeri
+const numbers = ["0","1","2","3","4","5","6","7","8","9","10"];
+document.querySelector(".numbers").innerHTML ="Lista di numeri <br>" + numbers;
 console.log(numbers)
 
+// Posizione minima da cui far partire l'array
 let minPosition = 3;
+document.querySelector(".minPosition").innerHTML = "Numero da cui partire <br>" + minPosition; 
 console.log(minPosition)
 
-
+// Posizione massima in cui far arrivare l'array
 let maxPosition = 8;
+document.querySelector(".maxPosition").innerHTML = "Numero dove finire <br>" + maxPosition; 
 console.log(maxPosition)
 
 
-
-// function getArray (numbers, minPosition, maxPosition){
+// funzione per vedere con ciclo for quali numeri di numbers sono compresi tra 3 e 8 
+function getArray (numbers, minPosition, maxPosition){
 const betweenNumbers = [];
-console.log(betweenNumbers)
 
-for(let i = 0; i >= numbers; i ++){
 
-    if(i >= 3 && i <= 8){
-        betweenNumbers.push(numbers[i])
-        
-    }
+for (let i = minPosition; i <= maxPosition; i++) {
+
+
+    betweenNumbers.push(numbers[i])
+    console.log(betweenNumbers)
+
+
+
 
 }
+return betweenNumbers;
+};
 
+// dichiaro la funzione
+const result = getArray(numbers,minPosition,maxPosition)
 
-// return betweenNumbers;
-// }
-
-// const result = getArray(numbers,minPosition,maxPosition)
-
+// stampo in pagina il risultato
+document.querySelector(".result").innerHTML = "Numeri compresi tra 3 e 8 <br>" + result;
