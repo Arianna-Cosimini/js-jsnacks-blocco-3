@@ -8,10 +8,10 @@ let userChoice = prompt("inserisci una parola");
 
 function getRename(userChoice) {
     const changeOrder = [];
+
     for (let i = 0; i < userChoice.length; i++) {
 
-        changeOrder.push(userChoice[i])
-        console.log(changeOrder.sort())
+        changeOrder.push(userChoice[i]);
     }
 
     return changeOrder;
@@ -19,5 +19,6 @@ function getRename(userChoice) {
 }
 
 const result = getRename(userChoice);
-console.log(result)
+document.querySelector(".result").innerHTML = ( "Il nome che hai inserito con le lettere ordinate alfabeticamente è: <br>" + result.sort().join(""));
+
 
