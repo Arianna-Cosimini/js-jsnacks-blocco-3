@@ -6,10 +6,18 @@
 
 let userChoice = prompt("inserisci una parola");
 
+function getRename(userChoice) {
+    const changeOrder = [];
+    for (let i = 0; i < userChoice.length; i++) {
 
-const result = [];
-for(let i = 0; i < userChoice.length; i++){
+        changeOrder.push(userChoice[i])
+        console.log(changeOrder.sort())
+    }
 
-    result.push(userChoice[i])
-    console.log(result.sort())
+    return changeOrder;
+    
 }
+
+const result = getRename(userChoice);
+console.log(result)
+
