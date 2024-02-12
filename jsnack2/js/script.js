@@ -15,8 +15,10 @@ console.log(numberList)
 
 function betweenArray (nameList, numberList){
     const numberPlusNameList = [];
-    for (let i = 0  ; i <  nameList.length; i++ ){
-        
+    for (let i = 0  ; i <  numberList.length; i++ ){
+        numberPlusNameList.push(nameList[i])
+        numberPlusNameList.push(numberList[i])
+        console.log(numberPlusNameList)
     }
 }
 
