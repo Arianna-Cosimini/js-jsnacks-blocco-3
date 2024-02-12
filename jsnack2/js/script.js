@@ -5,3 +5,7 @@
 // es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
 
 
+const nameList = ["Arianna", "Nicolò", "Emenuele"];
+console.dir(nameList)
+const numberList = ["27","33","5"]
+console.log(numberList)
