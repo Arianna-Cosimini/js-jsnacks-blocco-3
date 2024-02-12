@@ -5,9 +5,11 @@
 
 
 let userChoice = prompt("inserisci una parola");
+
+
 const result = [];
 for(let i = 0; i < userChoice.length; i++){
 
     result.push(userChoice[i])
-    console.log(result)
+    console.log(result.sort())
 }
