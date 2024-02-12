@@ -15,8 +15,27 @@ let minPosition = 3;
 console.log(minPosition)
 
 
-let maxPosition = 4;
+let maxPosition = 8;
 console.log(maxPosition)
 
 
+
+// function getArray (numbers, minPosition, maxPosition){
+const betweenNumbers = [];
+console.log(betweenNumbers)
+
+for(let i = 0; i >= numbers; i ++){
+
+    if(i >= 3 && i <= 8){
+        betweenNumbers.push(numbers[i])
+        
+    }
+
+}
+
+
+// return betweenNumbers;
+// }
+
+// const result = getArray(numbers,minPosition,maxPosition)
 
