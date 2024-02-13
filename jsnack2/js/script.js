@@ -38,18 +38,17 @@
 
 const nameList = ["Arianna","Nicolò","Emenuele"];
 
+document.querySelector(".names").innerHTML = `Lista di nomi: <br> ${nameList}`
+
 const numberList = ["27", "33","5"]
+document.querySelector(".numbers").innerHTML = `Lista di numeri: <br> ${numberList}`
+
 
 function betweenArray(nameList, numberList) {
     const numberPlusNameList = [];
 
 
-    if (nameList.length < numberList.length) {
-        nameList.push(userName)
-    } else if (numberList.length < nameList.length) {
-        numberList.push(userNumber)
-    } else if (nameList.length == numberList.length) {
-
+   
         for (let i = 0; i < numberList.length; i++) {
 
             numberPlusNameList.push(nameList[i])
@@ -57,7 +56,6 @@ function betweenArray(nameList, numberList) {
 
             console.log(numberPlusNameList)
         }
-    }
 
 
 
@@ -65,6 +63,5 @@ function betweenArray(nameList, numberList) {
 }
 
     let result = betweenArray(nameList, numberList);
-    console.log(result)
-
+    document.querySelector(".result").innerHTML = `Lista di nomi alternata a lista di numeri: <br> ${result}`
 
